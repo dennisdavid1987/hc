@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+ <style>
+     
+        
+    table {    
+     border: 8px solid white;
+        border-style: inset;
+     }
+       th {    
+     border: 10px solid white;
+           border-style: ridge;
+     }
+          td {    
+     border: 1x solid black;
+             ;
+     }
+  
+     
+     
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #D1D7CF;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: mediumblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3CDEE8;
+}
+     
+     /* modal  */
+     .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+
+      body {
+  background-image: url(indexfiles/fondo.final.jpg);
+         background-repeat: no-repeat;
+         
+         background-size: 100%;
+      
+          background-position: 0px 300px;
+         
+         
+}
+     
+     p.a {
+  font-size: 22px;
+}
+     .sombra {
+   text-shadow: 2px 2px 6px black, 0 0 1em #16A151, 0 0 0.9em #16A151;
+   color: blue;
+   font: 2em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+}
+     .sombra2 {
+   text-shadow: 1px 1px 2px black, 0 0 1em green, 0 0 0.2em green;
+   color: mediumblue;
+   font: 1.3em Georgia, "Bitstream Charter", "URW Bookman L", "Century Schoolbook L", serif;
+}
+     
+    </style>   
+</head>    
+<body>
+    <img src="indexfiles/escudo.jpeg" width="120" height="120" align="left">
+    <img src="indexfiles/escudodelecuador.png" width="120" height="120" align="right">
+    <h1 class="sombra" style="text-align:center;">UNIDAD EDUCATIVA PARTICULAR "HACIA LA CUMBRE"</h1> 
+    <h2 class="sombra" style="text-align:center;">ANUARIO DIGITAL </h2>
+    
+<nav><ul>
+        <li><a href="hcanuario.html">ANUARIO DIGITAL</a></li>
+        <li><a href="anuariorecuerdo.html">ANUARIO RECUERDO</a></li>
+       </ul></nav>  
+
+    <H3 class="sombra2" align="center">PROMOCION 2020-2021 </H3>
+    <H3 class="sombra2" align="center">TERCERO BACHILLERATO - ESPECIALIZACION INFORMATICA</H3>
+       
+    <table style="width:100%">
+  <tr>
+    <th><a href="#openModal1"><img src="indexfiles/gifinformal/gifaldairinformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Encalada Yagual Willy Aldahir</P>
+        
+
+<div id="openModal1" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNO: ENCALADA ALDAHIR </p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoinformal/videoaldairinformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>Conquistaste tus metas, ahora conquista tus sueños</p>
+    </div>
+</div></th>
+      
+    <th><a href="#openModal2"><img src="indexfiles/gifinformal/gifjocelyninformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Barahona Torres Jocelyn Genis</P>
+
+<div id="openModal2" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: BARAHONA JOCELYN</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoinformal/videojocelyninformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>Vive la vida a lo maximo</p>
+    </div>
+</div></th>
+    <th><a href="#openModal3"><img src="indexfiles/gifinformal/gifmayreninformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Yagual Chichande Mayren Marcelina</P>
+
+<div id="openModal3" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: YAGUAL MAYREN</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoinformal/videomayreninformal.mp4" type="video/mp4">
+   
+</video>
+        
+        <p>Si lo puedes soñar lo puedes lograr</p>
+    </div>
+</div></th>
+    
+          
+  </tr>
+    <tr>
+    <th><a href="#openModal4"><img src="indexfiles/gifinformal/gifnaylininformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Vera Yagual Nayelin Michael</P>
+
+<div id="openModal4" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: VERA NAYELIN</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoinformal/videonaylininformal.mp4" type="video/mp4">
+   
+</video>
+        
+        <p>Valora para que te valoren</p>
+    </div>
+</div></th>
+      
+    <th><a href="#openModal5"><img src="indexfiles/gifinformal/gifnaldoinformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Garcia Garcia Naldo Gregorio</P>
+
+<div id="openModal5" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNO: GARCIA NALDO</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoinformal/videonaldoinformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>A pesar de las dificultades, en esta vida siempre habra una oportunidad para que alcances el exito</p>
+    </div>
+</div></th>
+    <th><a href="#openModal6"><img src="indexfiles/gifinformal/gifmadelineinformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Yagual Gomez Madeline Isabel</P>
+
+<div id="openModal6" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: GOMEZ MADELINE</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoinformal/videomadelineinformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>Valora lo que tienes</p>
+    </div>
+</div></th>
+    
+          
+  </tr>
+        <tr>
+    <th><a href="#openModal7"><img src="indexfiles/gifinformal/gifabigailinformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Bravo Lopez Abigail Grace</P>
+
+<div id="openModal7" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: BRAVO ABIGAIL</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoformal/videoabigailformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>Cumple tus sueños y logra lo que te propones</p>
+    </div>
+</div></th>
+      
+    <th><a href="#openModal8"><img src="indexfiles/gifinformal/gifyulyinformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Suarez Chacho Yuly Alejandra</P>
+
+<div id="openModal8" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: SUAREZ YULY</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoinformal/videoyulyinformal.mp4" type="video/mp4">
+ 
+</video>
+        
+        <p>Logra tus metas para que te conviertas en los sueños que lograste</p>
+    </div>
+</div></th>
+    <th><a href="#openModal9"><img src="indexfiles/gifinformal/gifkemiainformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Alvarado Vera Kenia Angelica</P>
+
+<div id="openModal9" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: ALVARADO KENIA</p>
+        <video width="640" height="360" controls  >
+    <source src="indexfiles/videoformal/videokeniaformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>Mientra mas fuerte sean tu pruebas mas grandes seran tus victorias</p>
+    </div>
+</div></th>
+            </tr>
+        <tr>
+    
+    <th><a href="#openModal107"><img src="indexfiles/gifinformal/gifmariainformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Ortiz Macias Maria Christina</P>
+
+<div id="openModal107" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION </h2>
+        <p>ALUMNA: ORTIZ MARIA </p>
+        <video width="640" height="360" controls >
+    <source src="indexfiles/videoinformal/videomariainformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>Portate mal y cuidate bien</p>
+    </div>
+          </div></th>
+            
+    <th><a href="#openModal10"><img src="indexfiles/gifinformal/gifbiancainformal.gif" width="200" height="250"></a>
+      
+        <P class="a">Palma Bohorquez Bianca Alisson</P>
+        
+
+<div id="openModal10" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <img src="indexfiles/escudo.jpeg" width="80" height="80" align="right">
+        <h2>RECUERDO DE LA INSTITUCION</h2>
+        <p>ALUMNA: PALMA BIANCA </p>
+        <video width="640" height="360" controls >
+    <source src="indexfiles/videoinformal/videobiancainformal.mp4" type="video/mp4">
+    
+</video>
+        
+        <p>No puedes logar el exito si te viste de fracaso</p>
+    </div>
+</div></th>
+      
+  </tr>
+        
+        </table>
+    
+    
+    </body>
+</html>
